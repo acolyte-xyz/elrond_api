@@ -8,8 +8,9 @@ part 'response.g.dart';
 class ApiException implements Exception {
   final int statusCode;
   final String message;
+  final String? error;
 
-  const ApiException(this.statusCode, this.message);
+  const ApiException(this.statusCode, this.message, {this.error});
 
   factory ApiException.fromJson(Map<String, dynamic> json) =>
       _$ApiExceptionFromJson(json);

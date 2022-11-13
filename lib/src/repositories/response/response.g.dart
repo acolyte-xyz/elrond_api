@@ -9,10 +9,12 @@ part of 'response.dart';
 ApiException _$ApiExceptionFromJson(Map<String, dynamic> json) => ApiException(
       json['statusCode'] as int,
       json['message'] as String,
+      error: json['error'] as String?,
     );
 
 Map<String, dynamic> _$ApiExceptionToJson(ApiException instance) =>
     <String, dynamic>{
       'statusCode': instance.statusCode,
       'message': instance.message,
+      'error': instance.error,
     };

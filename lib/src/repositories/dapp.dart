@@ -10,6 +10,7 @@ class Dapp {
 
   const Dapp(this._baseUrl, this._client);
 
+  /// Returns configuration used in dapps
   Future<GetDappConfigResponse> config() async {
     final response = await _client.get(Uri.parse('$_baseUrl/dapp/config'));
     if (response.statusCode != 200) {
