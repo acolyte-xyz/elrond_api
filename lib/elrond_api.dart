@@ -15,6 +15,7 @@ export 'package:elrond_api/src/repositories/request/transactions/send_transactio
 export 'package:elrond_api/src/repositories/response/response.dart';
 export 'package:elrond_api/src/repositories/response/dapp/get_config/get_config.dart';
 export 'package:elrond_api/src/repositories/response/transactions/send_transaction/send_transaction.dart';
+export 'package:elrond_api/src/repositories/response/transaction/transaction.dart';
 
 class ElrondApi {
   final Client client;
